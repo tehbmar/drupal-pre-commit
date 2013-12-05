@@ -6,7 +6,7 @@ Git Pre-Commit Hook Setup:
 2. Symbolically link to pre-commit and prepare-commit-message files
   <strong>ln -s /var/www/html/drupal-pre-commit/pre* .</strong>
 3. Make sure that the file has an execute permission.
-   <strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/pre-commit</strong>
+   <strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/pre-commit</strong><br>
    <strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/prepare-commit-message</strong>
 
 Requirements:
@@ -28,7 +28,7 @@ You also need to have a Code Sniffer installed before using this pre-commit scri
    
    http://pear.php.net/manual/en/installation.getting.php
 2. <strong>$ sudo pear update-channels<strong>
-3. <strong>$ sudo pear install PHP_CodeSniffer<strong>
+3. <strong>$ sudo pear install PHP_CodeSniffer-1.4.3 #1.4.3 is needed due to a bug in coder it might be fixed in the dev branch but I haven't checked<strong>
 4. <strong>$ sudo ln -sv /path/to/coder/coder_sniffer/Drupal $(pear config-get php_dir)/PHP/CodeSniffer/Standards/Drupal<strong>
 
 
