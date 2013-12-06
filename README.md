@@ -2,12 +2,12 @@ Git Pre-Commit Hook Setup:
 ------
 
 1. Navigate to {GitRootDir}/.git/hooks
-  <strong>cd /var/www/html/cardcom</strong>
+  <br><strong>cd /var/www/html/cardcom</strong>
 2. Symbolically link to pre-commit and prepare-commit-message files
-  <strong>ln -s /var/www/html/drupal-pre-commit/pre* .</strong>
+  <br><strong>ln -s /var/www/html/drupal-pre-commit/pre* .</strong>
 3. Make sure that the file has an execute permission.
-   <strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/pre-commit</strong><br>
-   <strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/prepare-commit-message</strong>
+  <br><strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/pre-commit</strong>
+  <br><strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/prepare-commit-message</strong>
 
 Requirements:
 -------------
