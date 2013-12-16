@@ -8,4 +8,4 @@ if [ -z `echo $GIT_COMMIT_MESSAGE | grep -Eo "^[0-9]{1,}:"` ]; then
   echo
   echo "Aborting Commit."
   exit 1
-fi"
+fi
