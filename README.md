@@ -1,14 +1,3 @@
-Git Pre-Commit Hook Setup:
-------
-
-1. Navigate to {GitRootDir}/.git/hooks
-  <br><strong>cd /var/www/html/cardcom</strong>
-2. Symbolically link to pre-commit and prepare-commit-message files
-  <br><strong>ln -s /var/www/html/drupal-pre-commit/pre* .</strong>
-3. Make sure that the file has an execute permission.
-  <br><strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/pre-commit</strong>
-  <br><strong>$ sudo chmod +x /var/www/html/cardcom/.git/hooks/prepare-commit-message</strong>
-
 Requirements:
 -------------
 You need the coder module which you can get with
@@ -38,7 +27,17 @@ Basically, the idea in #4 is to link/include the Drupal's code sniffer module to
 
 The <strong>$(pear config-get php_dir)</strong> part in the #4 command will be usually evaluated in Ubuntu as <strong>/usr/share/php</strong>
 
+Git Pre-Commit Hook Setup:
+------
 
+1. Navigate to {GitRootDir}/.git/hooks
+  <br><strong>cd /var/www/html/cardcom/.git/hooks</strong>
+2. Symbolically link to pre-commit and prepare-commit-message files
+  <br><strong>ln -s /var/www/html/drupal-pre-commit/pre* .</strong>
+3. Make sure that the file has an execute permission.
+  <br><strong>$ sudo chmod +x pre-commit</strong>
+  <br><strong>$ sudo chmod +x prepare-commit-msg</strong>
+  
 Usage:
 --------
 
