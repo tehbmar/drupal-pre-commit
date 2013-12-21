@@ -6,6 +6,6 @@ if [ -z `echo $GIT_COMMIT_MESSAGE | grep -iEo "^([0-9]{1,}:|merge)"` ]; then
   echo "Example:"
   echo "1337: Hacking the planet."
   echo
-  #echo "Aborting Commit."
-  #exit 1
+  echo "Aborting Commit."
+  exit 1
 fi
