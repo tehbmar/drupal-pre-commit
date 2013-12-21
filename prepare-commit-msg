@@ -1,11 +1,11 @@
 #!/bin/sh
 
 GIT_COMMIT_MESSAGE=`cat $1`
-if [ -z `echo $GIT_COMMIT_MESSAGE | grep -Eo "^[0-9]{1,}:"` ]; then
+if [ -z `echo $GIT_COMMIT_MESSAGE | grep -iEo "^([0-9]{1,}:|merge)"` ]; then
   echo "Your commit message must start with an issue number followed by a colon."
   echo "Example:"
   echo "1337: Hacking the planet."
   echo
-  echo "Aborting Commit."
-  exit 1
+  #echo "Aborting Commit."
+  #exit 1
 fi
